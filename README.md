@@ -5,7 +5,7 @@ A JavaFX desktop app. A student looks at the webcam, Azure Face API finds out wh
 it is, a small liveness check proves it is a real person, and attendance is saved
 in a local SQLite file. Fake attempts show a red **Proxy Alert** on the teacher dashboard.
 
-## What you need
+## What we need
 1. **JDK 17** and **Maven** (or IntelliJ / Eclipse / NetBeans with Maven support)
 2. A **webcam** and internet
 3. An **Azure Face resource** (portal.azure.com -> create "Face" resource)
@@ -50,7 +50,4 @@ angle (yaw) from Azure in two photos, and the angle must change and the face mus
 still be the same person. A still photo or phone screen does not turn on its own.
 This is basic - it can be written in the report as "future scope: Azure Face Liveness SDK".
 
-## Known limits (good to say honestly in viva)
-- Free Azure tier allows about 20 calls/minute; one check-in uses 4 calls.
-- Needs good light and one face at a time.
-- Someone moving a photo can fake a small angle change; the real Azure Liveness would be stronger.
+
