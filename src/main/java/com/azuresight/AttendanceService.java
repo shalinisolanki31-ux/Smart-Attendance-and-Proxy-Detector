@@ -54,11 +54,11 @@ public class AttendanceService {
         }
 
         if (db.alreadyPresentToday(student.getStudentId())) {
-            return new CheckInResult(false, false, student.getName() + ", your attendance is already marked today.");
+            return new CheckInResult(false, false, student.getName() + ", your attendance is already marked today.  ");
         }
 
         // ---- Step 3: liveness check (turn your head) ----
-        status.accept("Hi " + student.getName() + "! Now slowly turn your head to one side...");
+        status.accept("Hi " + student.getName() + "! Now slowly turn your head to one side.......");
         Thread.sleep(2500);
 
         byte[] photo2 = camera.captureJpeg();
